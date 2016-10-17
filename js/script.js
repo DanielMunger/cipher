@@ -18,3 +18,11 @@ var third = function(someSentence) {
 };
 
 alert(third(sentence));
+
+var fourth = function(someSentence) {
+  var count = someSentence.length;
+  var count2 = count / 2;
+  var index = someSentence.slice(count2, count2 + 1);
+  var newsentence = index + someSentence.slice(0);
+}
+alert(fourth(sentence));
