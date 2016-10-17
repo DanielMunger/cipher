@@ -1,13 +1,20 @@
 var sentence =  prompt("Enter a sentence:");
 
-var first = function(sentence) {
-  var capital_sentence = sentence.charAt(0).toUpperCase() + sentence.slice(1,-1) + sentence.slice(-1).toUpperCase();
+var first = function(param) {
+  var capital_sentence = param.charAt(0).toUpperCase() + param.slice(1,-1) + param.slice(-1).toUpperCase();
   return capital_sentence;
 };
-alert(first(sentence));
 
-var second = function(sentence) {
-  var reverse = sentence.slice(-1) + sentence.slice(1,-1) + sentence.charAt(0);
+
+var second = function(param) {
+  var reverse = param.slice(-1) + param.slice(1,-1) + param.charAt(0);
   return reverse;
-}
-alert(second(sentence));
+};
+
+
+var third = function(someSentence) {
+  var someVar = first(someSentence);
+  return second(someVar);
+};
+
+alert(third(sentence));
