@@ -5,3 +5,9 @@ var first = function(sentence) {
   return capital_sentence;
 };
 alert(first(sentence));
+
+var second = function(sentence) {
+  var reverse = sentence.slice(-1) + sentence.slice(1,-1) + sentence.charAt(0);
+  return reverse;
+}
+alert(second(sentence));
